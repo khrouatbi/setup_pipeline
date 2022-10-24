@@ -4,9 +4,8 @@
     X-Frame-Options = "sameorigin"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors https://effulgent-trifle-566bd9.netlify.app/"
-    Content-Security-Policy = "script-src https://effulgent-trifle-566bd9.netlify.app/"
-    
+    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+
     #  Multi-value headers are expressed with multi-line strings
     cache-control = '''
     max-age=0,
