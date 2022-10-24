@@ -4,7 +4,16 @@
     X-Frame-Options = "sameorigin"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    
+    Content-Security-Policy = "frame-ancestors https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "script-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "style-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "img-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "connect-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "media-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "object-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "manifest-src https://main--effulgent-trifle-566bd9.netlify.app/"
+    Content-Security-Policy = "worker-src https://main--effulgent-trifle-566bd9.netlify.app/"
+
     #  Multi-value headers are expressed with multi-line strings
     cache-control = '''
     max-age=0,
