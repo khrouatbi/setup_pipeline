@@ -1,14 +1,4 @@
 /*
- Server: Bowtie
- Content-Security-Policy: default-src 'none';
- Other-Headers-Here: Header-Value
-
-
- /*
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-
-/*
   # Only connect to this site and subdomains via HTTPS for the next two years
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 
