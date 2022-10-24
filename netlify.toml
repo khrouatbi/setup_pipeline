@@ -1,9 +1,9 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
+    X-Frame-Options = "sameorigin"
     X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
     Content-Security-Policy = "frame-ancestors https://affectionate-goldberg-b7bb76.netlify.app/"
     Content-Security-Policy = "script-src https://affectionate-goldberg-b7bb76.netlify.app/"
     Content-Security-Policy = "style-src https://affectionate-goldberg-b7bb76.netlify.app/"
@@ -15,8 +15,8 @@
     Content-Security-Policy = "worker-src https://affectionate-goldberg-b7bb76.netlify.app/"
 
     #  Multi-value headers are expressed with multi-line strings
-	cache-control = '''
-	max-age=0,
-	no-cache,
-	no-store,
-	must-revalidate'''
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
