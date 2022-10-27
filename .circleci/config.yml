@@ -1,8 +1,18 @@
 # CircleCI configuration file
 version: 2.1
 
-build:
-    steps: # steps that comprise the `build` job
+jobs:
+  build:
+    steps:
+      - checkout
+      - run:
+          name: Update NPM
+          command: "sudo npm install -g npm"
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
       - run: # print the name of the branch we're on
           name: "number job"
           command: echo ${CIRCLE_BUILD_NUM}
