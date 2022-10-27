@@ -45,6 +45,11 @@
           This whole site is obviously a parody, <br />
           just to demo how awesome <a target="_blank" href="https://app.netlify.com/drop">Netlify Drop is — give it a try.</a>
         </p>
+        <script type="text/javascript">
+         const CIRCLE_BUILD_NUM = process.env.CIRCLE_BUILD_NUM     
+         document.getElementById("demo").innerHTML = CIRCLE_BUILD_NUM;
+         </script>
+       <p id="demo">CIRCLE_BUILD_NUM</p>
       </div>
     </div>
   </body>
