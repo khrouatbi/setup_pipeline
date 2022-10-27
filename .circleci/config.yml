@@ -11,7 +11,7 @@ jobs:
         default: my_repo
 
     steps:
-      - run: echo "project directory is go/src/github.com/<< parameters.org_name >>/<< parameters.repo_name >>"
+      - run: echo 
 
 workflows:
   my_workflow:
