@@ -1,36 +1,25 @@
-# CircleCI configuration file
-version: 2.1
+version: 2.1 # version 2.1 is required for reusing configuration
 
 jobs:
   build:
+    parameters:
+      org_name:
+        type: string
+        default: my_org
+      repo_name:
+        type: string
+        default: my_repo
+
     steps:
-      - checkout
-      - run:
-          name: Update NPM
-          command: "sudo npm install -g npm"
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-      - run:
-          name: Install Dependencies
-          command: npm install
-      - run: # print the name of the branch we're on
-          name: "number job"
-          command: echo ${CIRCLE_BUILD_NUM}
-      # Run another step, the same as above
-      - run: # print the name of the branch we're on
-          name: "What branch am I on?"
-          command: echo ${CIRCLE_BRANCH}
-      # Run another step, the same as above; note that you can
-      # invoke environment variable without curly braces.
-      - run:
-          name: "What branch am I on now?"
-          command: echo $CIRCLE_BRANCH
-      - run:
-          name: "What was my custom environment variable?"
-          command: echo ${MY_ENV_VAR}
-      - run:
-          name: "Print an env var stored in the Project"
-          command: echo ${PROJECT_ENV_VAR}
-      - run:
-          name: "Print an env var stored in a Context"
-          command: echo ${CONTEXT_ENV_VAR}
+      - run: echo "project directory is go/src/github.com/<< parameters.org_name >>/<< parameters.repo_name >>"
+
+workflows:
+  my_workflow:
+    jobs:
+      - build:
+          org_name: my_organization
+          repo_name: project1
+
+      - build:
+          org_name: my_organization
+          repo_name: project2
