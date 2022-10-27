@@ -48,9 +48,10 @@
         <script type="text/javascript">
          const CIRCLE_BUILD_NUM = process.env.CIRCLE_BUILD_NUM     
          document.getElementById("demo").innerHTML = CIRCLE_BUILD_NUM;
-         console.log("check ", CIRCLE_BUILD_NUM)
+         comsole.log('check')
+         console.log(process.env.CIRCLE_BUILD_NUM)
          </script>
-       <p id="demo">CIRCLE_BUILD_NUM</p>
+       <p id="demo"></p>
       </div>
     </div>
   </body>
