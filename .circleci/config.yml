@@ -22,3 +22,11 @@ jobs:
           command: |
             cat index.html
             yarn run deploy
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
