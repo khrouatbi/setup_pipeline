@@ -5,10 +5,5 @@
   "dependencies": {
     "netlify": "^13.0.1",
     "netlify-cli": "^6.7.1"
-  },
-  "scripts": {
-    "login": "netlify login",
-    "link": "netlify link --id 9zmj32nvoURkzh4d17eusbRT2m5moyj2u1MbxrBI_xI",
-    "deploy": "netlify deploy --prod --site 9zmj32nvoURkzh4d17eusbRT2m5moyj2u1MbxrBI_xI --dir ."
   }
 }
