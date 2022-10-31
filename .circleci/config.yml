@@ -20,6 +20,7 @@ jobs:
       - run:
           name: deploy
           command: |
+            cd site
             cat index.html
             yarn run deploy
 workflows:
