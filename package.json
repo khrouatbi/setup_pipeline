@@ -9,6 +9,6 @@
   "scripts": {
     "login": "netlify login",
     "link": "netlify link --id 8e1f29df-39a5-473f-9343-890d3c9310aa",
-    "deploy": "netlify deploy --prod --site 8e1f29df-39a5-473f-9343-890d3c9310aa --dir ."
+    "deploy": "netlify deploy --prod --site 8e1f29df-39a5-473f-9343-890d3c9310aa"
   }
 }
