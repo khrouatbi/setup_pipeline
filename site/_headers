@@ -1,6 +1,5 @@
 /*
  Server: Bowtie
- Content-Security-Policy: frame-ancestors 'self'; default-src 'self'; style-src 'self'; form-action 'self'; connect-src 'self'; img-src 'self'; base-uri 'self';
  Other-Headers-Here: Header-Value
  X-Frame-Options: DENY 
  X-XSS-Protection: 1; mode=block
