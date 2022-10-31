@@ -10,13 +10,16 @@ jobs:
       - run: 
           name: environment variable change
           command: |
-            echo "Replace CIRCLE_BUILD_NUM."
-            echo $CIRCLE_BUILD_NUM
+            pwd
+            ls
             cd site
-            sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
+            echo "Now change CIRCLE_BUILD_NUM."
+            echo $CIRCLE_BUILD_NUM
+            sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html
             cat index1.html
             ls
             mv index1.html index.html
+            ls
       - run:
           name: deploy
           command: |
