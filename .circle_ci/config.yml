@@ -10,7 +10,7 @@ jobs:
       - run: 
           name: variable_substitution
           command: |
-            echo "No need to build, it is a html page. Now substitute CIRCLE_BUILD_NUM."
+            echo "Replace CIRCLE_BUILD_NUM."
             echo $CIRCLE_BUILD_NUM
             sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
             cat index1.html
