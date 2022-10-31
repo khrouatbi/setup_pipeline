@@ -15,8 +15,8 @@ jobs:
             cd site
             sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
             cat index1.html
-            mv index1.html index.html
             ls
+            mv index1.html index.html
       - run:
           name: deploy
           command: |
