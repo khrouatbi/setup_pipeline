@@ -1,10 +1,32 @@
-# CircleCI configuration file
-version: 2.1
-
 jobs:
-  build:
-    machine: true
-    steps: # steps that comprise the `build` job
-      run: 
-          name: "number job"
-          command: echo "Say hello to YAML!"
+  deploy:
+    working_directory: ~/project/website
+    docker:
+      - image: circleci/node:lts # choose image with node to run this job
+    environment:
+      NETLIFY_AUTH_TOKEN: 9zmj32nvoURkzh4d17eusbRT2m5moyj2u1MbxrBI_xI  
+    steps:
+      - checkout
+      - run: 
+          name: variable_substitution
+          command: |
+            echo "Replace CIRCLE_BUILD_NUM."
+            echo $CIRCLE_BUILD_NUM
+            sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
+            cat index1.html
+            ls
+            mv index1.html index.html
+            ls
+      - run:
+          name: deploy
+          command: |
+            cat index.html
+            yarn run deploy
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
