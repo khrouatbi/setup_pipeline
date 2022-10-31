@@ -33,6 +33,10 @@ Finally, we have our website with build number shown at the bottom: https://effu
 
 <img width="962" alt="image" src="https://user-images.githubusercontent.com/33653833/198926757-94bdaae6-7c9f-4d41-9631-f1e76abbde79.png">
 
+Checking the website headers, we get a score of 110:
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/33653833/198927378-eee2ba46-3683-4e90-a406-bad43fafbc3c.png">
+
+
 
 
 
