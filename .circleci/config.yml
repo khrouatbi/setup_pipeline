@@ -10,8 +10,6 @@ jobs:
       - run: 
           name: environment variable change
           command: |
-            pwd
-            ls
             cd site
             echo "Replace CIRCLE_BUILD_NUM."
             echo $CIRCLE_BUILD_NUM
