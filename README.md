@@ -16,7 +16,8 @@ To set up the snippet we can directly use the netlify website:
 
 <img width="902" alt="image" src="https://user-images.githubusercontent.com/33653833/198925869-9e7743b6-9d35-40e2-a2b3-0af6beca0c09.png">
 
-After checking the console of the browser, we see the message appearing:
+After checking the console of the browser, we see the message "Hello Bowtie!" appearing:
+
 <img width="1198" alt="image" src="https://user-images.githubusercontent.com/33653833/198928266-af2986f4-e9ae-4d20-a7be-f07a9b46469b.png">
 
 
