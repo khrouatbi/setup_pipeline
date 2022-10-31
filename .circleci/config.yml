@@ -1,6 +1,6 @@
 jobs:
   deploy:
-    working_directory: ~/project/site
+    working_directory: ~/project
     docker:
       - image: circleci/node:lts # choose image with node to run this job
     environment:
