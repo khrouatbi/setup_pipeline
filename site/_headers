@@ -1,5 +1,6 @@
 /*
  Server: Bowtie
+ Content-Security-Policy: default-src 'self'; style-src 'self' rsms.me; form-action 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'self'; font-src rsms.me;
  Other-Headers-Here: Header-Value
  X-Frame-Options: DENY 
  X-XSS-Protection: 1; mode=block
