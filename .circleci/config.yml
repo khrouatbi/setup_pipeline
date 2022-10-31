@@ -12,9 +12,9 @@ jobs:
           command: |
             pwd
             ls
+            cd site
             echo "Replace CIRCLE_BUILD_NUM."
             echo $CIRCLE_BUILD_NUM
-            cd site
             sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
             cat index1.html
             ls
