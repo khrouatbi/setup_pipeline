@@ -15,7 +15,6 @@ jobs:
             echo $CIRCLE_BUILD_NUM
             sed "s/CIRCLE_BUILD_NUM/$CIRCLE_BUILD_NUM/" index.html > index1.html 
             cat index1.html
-            ls
             mv index1.html index.html
             ls
       - run:
