@@ -8,7 +8,7 @@
   },
   "scripts": {
     "login": "netlify login",
-    "link": "netlify link --id 9zmj32nvoURkzh4d17eusbRT2m5moyj2u1MbxrBI_xI",
-    "deploy": "netlify deploy --prod --site 9zmj32nvoURkzh4d17eusbRT2m5moyj2u1MbxrBI_xI --dir ."
+    "link": "netlify link --id 8e1f29df-39a5-473f-9343-890d3c9310aa",
+    "deploy": "netlify deploy --prod --site 8e1f29df-39a5-473f-9343-890d3c9310aa --dir ."
   }
 }
